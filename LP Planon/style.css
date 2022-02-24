@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: green;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+section .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+section .content .textbox h2{
+    color: green;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+section .content .textbox h2 span{
+    color: yellowgreen;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+section .content .textbox p{
+    color: green;
+}
+section .content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: green;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+section .content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+section .content .imgbox img{
+    max-width: 340px;
+}
+section .thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+section .thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+section .thumb li:hover{
+    transform: translateY(-15px);
+}
+section .thumb li img{
+    max-width: 60px;
+}
+section .sci{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .sci li{
+    list-style: none;
+}
+section .sci li a{
+    display: inline-block;
+    margin: -60% -20px;
+    transform: scale(0.3);
+    filter: invert(0);
+}
